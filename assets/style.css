@@ -870,7 +870,12 @@ footer i{
         width: 300px;
           
     }
-
+   
+}
+@media(max-width:400px){
+    #userModal{
+        margin-top: 0px; 
+    }
 }
 
 
