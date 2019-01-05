@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>landingPage</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/style.css">
+<style>
+        @font-face{
+        font-family: 'Cipitilloimport';
+        src: url('Cipitillo.otf');
+    }
+    
+    body{
+        margin: 0;
+        padding: 0;
+        
+    }
+    
+    
+    #headPix{
+        height: 380px;
+        width: 100%;
+        background-image: url('./pictures/pic33.jpg');
+        
+    }
+    
+    #headItems{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: indigo;
+        height: 50px;
+        color: white; 
+        margin: 0;
+        padding: 10px;  
+        display: flex; 
+        align-items: center;
+        
+        
+    }
+    #headItems >span{
+        margin-right: 100px;
+        margin-left: 20px;
+        font-family:  'Cipitilloimport';
+        font-size: 50px;
+        padding: 0;
+       
+    }
+    #headItems >span>span{
+        color: rgb(243, 210, 125); 
+        
+    }
+    #headItems >ol{
+        display: inline;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        text-align: center;
+    
+        
+        
+    }
+    #headItems >ol>li{
+        display: inline;
+        margin-right: 60px;   
+        cursor: pointer;
+    }
+    #signupHome{
+        
+        cursor: pointer;
+        
+        
+    }
+    #signupHomeDiv{
+        height: 50px;
+        background-color: white;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 80px;
+        padding: 10px;
+    }
+    #loginLogo{
+        font-size: 25px;
+        cursor: pointer;
+        color: black;
+        
+    }
+    #loginDropdownForm{
+        position: fixed;
+        top: 60;
+        right: 0;
+        width: 100%;
+        background-color: white;
+       
+        margin: 0;
+        
+    }
+    #background{
+        position: fixed;
+        top: 70px;
+        width: 100%;
+        min-height: 100%;
+        margin: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        
+    }
+    
+    #loginDropdown{
+        width: 90%;
+        padding: 20px;
+        
+        margin: auto;
+    }
+    #loginDropdownSubmit{
+        width: 100%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        
+    }
+    #loginDropdown>input{
+        width: 100%;
+        line-height: 35px;
+        font-size: 15px;
+        border: 0;
+        outline: 0;
+        background-color: lightgrey;
+       padding-top: 20px;
+       padding-left: 10px;
+       font-size: 17px;
+    }
+    #loginDropdown>input + label{
+        position: relative;
+        left: 10px;
+        top: -30px;
+        font-weight: bold;
+        transition: 0.800s ease; 
+        margin: 0;
+        padding: 0;
+    }
+    #loginDropdown>input:focus + label{
+        top: -50px;
+        font-size: 12px;
+        color: indigo;
+    }
+    #loginDropdown>input:valid + label{
+        top: -50px;
+        font-size: 12px;
+        color: indigo;
+    }
+    
+    
+        
+    @media(max-width:350px){
+        
+        #headItems >span{
+            margin-right: 20%;
+            
+        }
+        #signupHomeDiv{
+            margin-right: 10px;
+        
+        }
+        
+    }   
+    
+    
+    
+    @media(max-width:945px){
+        #headItems >ol{
+            display: none;
+            
+        }
+        #signupHomeDiv{
+            margin-left: 0;
+        
+        }
+        #headItems >span{
+            margin-right: 40%;
+            
+        }
+        
+    }
+    @media(max-width:600px){
+        
+        #signupHome{
+            display: none;
+        
+        }
+        
+    }
+    @media(min-width:766px){
+        #loginDropdownForm{
+            
+            width: 450px;
+            
+        }
+        #loginDropdown{
+            width: 400px;
+            
+        }
+        
+    }
+    @media(min-width:1008px){
+        
+        #loginDropdownForm{
+            top: 60px;
+            left: 770px;
+            width: 230px
+        }
+        #loginDropdown{
+            width: 180px;
+            padding: 20px;
+            
+        }
+    }
+</style>
+</head>
+<body>
+    <main>
+        <div id="headItems">
+            <span>
+                Send<span>It</span>  
+            </span>
+            <ol>
+                <li>Order</li>
+                <li>Track</li>
+                <li>Support</li>
+                <li>Admin</li>
+            </ol>
+            <div id="signupHomeDiv">
+                    <span id="signupHome">SignUp/LogIn</span> &nbsp  &nbsp<i class="far fa-user-circle" id="loginLogo"></i>
+            </div>
+            
+        </div>
+        <div id="background">
+             
+        </div>
+        <form action="#" id="loginDropdownForm">
+                <div id="loginDropdown">
+                        <input type="text" id="LoginName" required>
+                        <label for="LoginName">User Name</label><br><br>
+                        <input type="password" id="LoginPassword" required>
+                        <label for="LoginPassword">Password</label><br><br>
+                        <div id="loginDropdownSubmit">
+                                <input type="submit" value="LOGIN">
+                        </div>
+                        
+                </div>
+        </form>
+        
+        <div id="headPix">       
+        </div>
+
+    </main>
+    
+    
+        
+    <footer>
+        
+    </footer>
+ <script src="./assets/script.js"></script>   
+</body>
+</html>

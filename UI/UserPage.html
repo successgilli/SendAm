@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/style.css">
+    <title>UserProfilePage</title>
+</head>
+<body>
+    <!--css begins after line 556-->
+    <header id="UserHead">
+        <div id="Toggle">
+            <span>  <a href="./landingPage.html"> Send<span>It</span></a></span>
+        </div>
+        <div id="remainning">
+                <i class="fas fa-bars" id="navBarU"></i>
+                <i class="far fa-user-circle" id="Logout"></i>&nbsp &nbsp
+                
+        </div>
+
+    </header>
+    <main id="UserMain">
+        <aside>
+            <ol>
+                <li><a href="./UserPage.html">Create Order</a></li>
+                <li><a href="./MyOrders.html">My Orders</a></li>
+                <li>LogOut</li>
+            </ol>
+        </aside>
+        <section id="sec">
+            <div>
+                    <div id="createOrder">Create Order  &nbsp <i class="fas fa-plus"></i></div>
+                    <div id="OrdersPanel">
+                            <div id="Orders">
+                                Total Orders
+                                <span></span>
+                            </div>
+                            <div id="pendingOrders">
+                                Orders Pending
+                                <span></span>
+                            </div>
+                    </div>
+                    
+            </div>
+                
+        </section>
+
+    </main>
+    <div id="UserbackgroundToggle"></div>
+    <div id="Userbackground">
+        <div id="userModal">
+            
+                <h3>MAKING A NEW ORDER</h3><p id="closeModal">+</p>
+                <form action="#hgvkjhgvkj" method="post" >
+
+           
+                        <input type="text" id="itemName" required>
+                        <label for="itemName" >Item Name</label>
+                        <input type="number" id="howMany" required min="1" max="100">
+                        <label for="howMany">How many</label>
+                        <select name="" id="pickUpLocation" required>
+                            <option value="abia">abia</option>
+                            <option value="umuahia">umuahia</option>
+                            <option value="lagos">lagos</option>
+                            <option value="rivers">rivers</option>
+                            <option value="onitsha">onitsha</option>
+                            <option value="kaduna">kaduna</option>
+                            <option value="fct">fct</option>
+                            <option value="kano">kano</option>
+                            <option value="delta">delta</option>
+                            <option value="ogun">ogun</option>
+                            <option value="" selected>  </option>
+                        </select>
+                        <label for="pickUpLocation" id="loc1">pickup Location</label>
+                        <select name="weight" id="weight">
+                            <option value="1">100-200 kg</option>
+                            <option value="2">201-300 kg</option>
+                            <option value="3">301-400 kg</option>
+                            <option value="4">401-500 kg</option>
+                            <option value="5">501 and above</option>
+                            <option value="" selected> </option>
+                        </select>
+                        <label for="weight" id="weightlabel">select range</label>
+               
+                    <div>
+                            <input type="submit" value="SUBMIT">
+                    </div>
+                    
+                </form>
+
+        </div>
+    </div>
+    <footer>
+            <section class="footer">
+                <h5>Author</h5>
+                <p>
+                        Gilbert Awaji-mitop N. &nbsp &nbsp
+                        @ 2018
+                </p>
+            </section>
+            <section class="footer">
+                <h5>Contact Us</h5>
+                <p>
+                     Phone: 09057496803; &nbsp &nbsp
+                </p> 
+                <p>
+                     Email: Successgilli@gmail.com
+                </p>
+            </section>
+            <section class="footer">
+                        <h5>Follow Us</h5>
+                        <p>
+                                        <i class="fab fa-twitter"></i> &nbsp &nbsp
+                                        <i class="fab fa-facebook-f"></i>&nbsp &nbsp
+                                        <i class="fab fa-linkedin-in"></i>&nbsp &nbsp
+                                        <i class="fab fa-google-plus-g"></i>&nbsp &nbsp
+                        </p>
+                    </section>
+
+    </footer>
+    <script src="../assets/script.js"></script>
+    <script src="../assets/userPageScript.js"></script>
+    <script src="../assets/userPage&OrderPage.js"></script>
+</body>
+</html>

@@ -1,0 +1,994 @@
+@font-face{
+    font-family: 'Cipitilloimport';
+    src: url('./Cipitillo.otf')
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+html{
+    min-height: 100%;
+}
+main{
+    width: 100%;
+   
+
+
+}
+header{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 50px;
+    background-color: indigo;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    z-index: 999;
+    
+}
+
+
+header>span{
+   margin-right: 10%;
+   font-family: 'Cipitilloimport';
+   font-size: 30px;
+    
+}
+header>span>span{
+    color: rgb(231, 71, 71);
+     
+ }
+header>ol{
+    list-style-type: none;
+    display: inline-block;
+    width: 40%;
+}
+header>ol>li{
+    display: inline;
+    margin-right: 35px;
+    cursor: pointer;
+}
+#picDiv{
+    background-image: url('./pictures/pic1.jpg');
+    height: 580px;
+    width: 100%;
+   background-size: 100% 100%;
+   z-index: 999;
+}
+#BackgroundContent{
+    width: 100%;
+    margin: auto;
+    padding-top: 70px;
+   
+}
+#welcome{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+}
+.white{
+    background-color: white;
+    color: rgb(114, 107, 107);
+    font-weight: bold;
+    font-size: 20px;
+    width: 150px;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+.indigo{
+    background-color: indigo;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+#boxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    }
+
+#signLogin{
+    margin-left: 10%;
+    cursor: pointer;
+    color: white;
+    
+    line-height: 70px;
+    margin-right: -12px;
+}
+#loginIcon{
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+    
+    line-height: 70px;
+    padding-left: 10px;
+    
+}
+#navBar{
+    font-size: 25px;
+    cursor: pointer;
+    
+}
+
+#loginDropdownForm{
+    position: fixed;
+    width: 100%;
+    top: 70px;
+    right: 0;
+    background-color: white;
+}
+#loginDropdown{
+    width: 90%;
+    padding: 20px;
+    z-index: 1000;
+    margin: auto;
+}
+#loginDropdownSubmit{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    
+}
+#loginDropdown>input{
+    width: 100%;
+    line-height: 35px;
+    font-size: 15px;
+    border: 0;
+    outline: 0;
+    background-color: lightgrey;
+   padding-top: 20px;
+   padding-left: 0px;
+   
+   font-size: 17px;
+}
+#loginDropdown>input + label{
+    position: relative;
+    left: 10px;
+    top: -30px;
+    font-weight: bold;
+    transition: 0.800s ease; 
+    margin: 0;
+    padding: 0;
+}
+#loginDropdown>input:focus + label{
+    top: -50px;
+    font-size: 12px;
+    color: indigo;
+}
+#loginDropdown>input:valid + label{
+    top: -50px;
+    font-size: 12px;
+    color: indigo;
+}
+
+
+#submitTrack{
+    
+    display: flex;
+        
+        justify-content: center;
+        align-items: center;
+        background-color: red;
+}
+#TrackId{
+   
+   
+}
+#TrackId>input{
+    width: 97%;
+    line-height: 35px;
+    font-size: 15px;
+    border: 0;
+    outline: 0;
+
+    margin: auto;
+    background-color: white;
+   padding-top: 20px;
+   padding-left: 10px;
+   
+   
+   
+   font-size: 17px;
+}
+#TrackId>input + label{
+    position: relative;
+    left: 10px;
+    top: -30px;
+    font-weight: bold;
+    transition: 0.800s ease; 
+    margin: 0;
+    padding: 0;
+}
+#TrackId>input:focus + label{
+    top: -50px;
+    font-size: 12px;
+    color: indigo;
+}
+#TrackId>input:focus{
+    border-left: 2px solid indigo;
+}
+#TrackId>input:valid + label{
+    top: -50px;
+    font-size: 12px;
+    color: indigo;
+}
+#inputTracker{
+    width: 100%;  
+    margin: auto;
+    display: flex;
+   
+}
+#background{
+    position: fixed;
+    top: 70px;
+    width: 100%;
+    min-height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
+    
+}
+#about{
+   padding: 30px;
+}
+.about>h4{
+    margin: auto;
+    text-align: center;
+    color: rgb(83, 80, 80);
+}
+#about{
+    
+    
+    
+}
+.about{
+    width: 90%;
+    padding: 10px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+   text-align: justify;
+
+}
+footer{
+   background-color: indigo;
+   color: white;
+   display: flex;
+   justify-content: space-around;
+}
+footer h5{
+    font-weight: bolder;
+    font-size: 15px;
+}
+footer i{
+    cursor: pointer;
+}
+@media(max-width:930px){
+    footer{
+        flex-direction: column;
+        
+        align-items: center;
+    }
+    footer h5,footer p {
+        text-align: center;
+    }
+    
+    
+}
+@media(max-width:465px){
+    #boxes{
+        margin-top: 60px;
+        margin-bottom: 30px;
+        }
+        .white{
+            
+            width: 100px;
+            height: 90px;
+            
+        }
+        .indigo{
+            
+            width: 100px;
+            height: 100px;
+
+        }
+        #welcome{
+            font-size: 20px;
+             
+        }
+    
+}
+@media(max-width:359px){
+    #boxes{
+        margin-top: 20px;
+        
+        }
+       
+    
+}
+@media(min-width:999px){
+    #loginDropdownForm{
+        position: fixed;
+        width: 300px;
+        top: 70px;
+        left: 50%;
+        
+    }
+    #loginDropdown{
+        width: 250px;
+        padding: 20px;
+        
+        margin: auto;
+    }
+}
+@media(min-width:640px){
+    #inputTracker{
+        width: 620px;  
+        margin: auto;
+      
+       display: flex;
+       margin-bottom: 30px;
+    }
+    #TrackId{
+        height: 57px;
+        width: 470px;
+        margin: auto;
+        display: inline-block;
+   
+        
+     }
+     #submitTrack{
+        width: 150px;
+        display: flex;
+        
+        justify-content: center;
+        align-items: center;
+        background-color: red;
+    
+    }
+    #about{
+    
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    
+    }
+    .about{
+        width: 90%;
+        padding: 10px;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 10px;
+       text-align: justify;
+    
+    }
+}
+@media(max-width:639px){
+    #inputTracker{
+       width: 90%;
+       margin: auto; 
+       display: flex;
+       flex-direction: column;
+       
+    }
+    #TrackId{
+        height: 57px;
+        
+        
+     }
+     #submitTrack{
+        line-height: 50px;
+    
+    }
+    #picDiv{
+       
+        height: 250px;
+        
+    }
+    #about{
+        margin-top: 220px;
+    }
+    
+    
+}
+@media(max-width:790px){
+    
+    header>ol{
+        display: none;
+        
+    }
+    
+    #signLogin{
+        display: none;
+    }
+    header{
+        
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        
+    }
+    #loginIcon{
+        margin-right: 10px;
+        
+    }
+   
+}
+@media(min-width:791px){
+    #navBar{
+        display: none;
+    }
+}
+
+@media(min-width:999px){
+    #loginDropdownForm{
+        position: fixed;
+        width: 300px;
+        top: 70px;
+        left: 50%;
+        
+    }
+    #loginDropdown{
+        width: 250px;
+        padding: 20px;
+        
+        margin: auto;
+    }
+    
+}
+
+@media(min-width:768px){
+    #loginDropdownForm{
+        position: fixed;
+        width: 600px;
+        top: 70px;
+        right: 0;
+        
+    }
+    #loginDropdown{
+        width: 550px;
+        padding: 20px;
+        
+        margin: auto;
+    }
+    
+    
+}
+@media(min-width:991px){
+    #loginDropdownForm{
+        position: fixed;
+        width: 300px;
+        top: 70px;
+        left: 54%;
+        
+    }
+    #loginDropdown{
+        width: 250px;
+        padding: 20px;
+        
+        margin: auto;
+    }
+}
+@media(min-width:1010px){
+    #loginDropdownForm{
+        position: fixed;
+        width: 300px;
+        top: 70px;
+        left: 54.3%;
+        
+    }
+    #loginDropdown{
+        width: 250px;
+        padding: 20px;
+        
+        margin: auto;
+    }
+}
+@media(min-width:1139px){
+    #loginDropdownForm{
+        position: fixed;
+        width: 300px;
+        top: 70px;
+        left: 55.5%;
+        
+    }
+    #loginDropdown{
+        width: 250px;
+        padding: 20px;
+        
+        margin: auto;
+    }
+}
+@media(min-width:1338px){
+    #loginDropdownForm{
+        position: fixed;
+        width: 300px;
+        top: 70px;
+        left: 55.7%;
+        
+    }
+    #loginDropdown{
+        width: 250px;
+        padding: 20px;
+        
+        margin: auto;
+    }
+}
+@media(min-width:1370px){
+    #loginDropdownForm{
+        position: fixed;
+        width: 300px;
+        top: 70px;
+        left: 56%;
+        
+    }
+    #loginDropdown{
+        width: 250px;
+        padding: 20px;
+        
+        margin: auto;
+    }
+}
+
+
+
+
+
+#UserHead{
+    display: flex;
+    padding: 0;
+    margin: 0;   
+    z-index: 1000;
+}
+#Toggle{
+    border-right: 2px solid white;
+    flex:1;
+    display: flex;
+    align-items: center;
+    margin-left: 0px;
+    height: 100%;
+    transition: 0.800s ease;
+}
+
+#remainning{
+    flex:3;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    font-size: 20px;
+}
+#Toggle>span>a{
+   margin-left: 10px;
+    font-family: 'Cipitilloimport';
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+ }
+ #Toggle>span>a>span{
+     color: rgb(231, 71, 71);
+      
+  }
+  #UserMain{
+    min-height: 590px;
+    display: flex;
+    padding: 0;
+    margin: 0;
+
+  }
+  #UserMain>aside{
+    flex:1;
+    margin-left: 0.1px; 
+ 
+    min-height: 100%;
+    background-color: black;
+    transition: 0.800s ease;
+    
+
+  }
+  #UserMain>section{
+    padding-top: 60px;
+    flex:3;
+    width: 100%;
+    min-height: 100%;
+}
+#UserMain>aside>ol{
+    padding: 10px;
+    padding-top: 50px;
+    color: grey;
+    list-style-type: none;
+    
+  }
+  #UserMain>aside>ol>li{
+      position: relative;
+    color: grey;
+    font-weight: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.800s ease;
+  }
+  #UserMain>aside>ol>li>a{
+    text-decoration: none;
+    color: grey;
+}
+  #UserMain>aside>ol>li>a:hover,#UserMain>aside>ol>li:hover{
+    color: white;
+}
+  #sec>div{
+      width: 80%;
+      margin: auto;
+  }
+  #createOrder{
+      color: green;
+      font-weight: bold;
+      padding: 10px;
+      margin-left: 70%;
+      border: solid 2px green;
+      border-radius: 7px;
+      width: 120px;
+      cursor: pointer;
+  }
+#Orders{
+    width: 150px;
+    text-align: center;
+    background-color: Green; 
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#pendingOrders{
+    width: 150px;
+    text-align: center;
+    height: 90px;
+    background-color: Yellow; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#OrdersPanel{
+    
+    display: flex;
+    width: 400px;
+    height: 90px;
+    margin: auto;
+    margin-top: 40px;
+    justify-content: space-between;
+    font-family: 'Cipitilloimport';
+}
+#navBarU{
+    margin-right: 90%;
+    cursor: pointer;
+}
+#UserbackgroundToggle{
+    position: fixed;
+    top: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    z-index: 990;
+    min-height: 100%;
+    display: none;
+    
+    
+}
+#Userbackground{
+    position: fixed;
+    top: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    min-height: 100%;
+     display: none;
+    
+}
+#userModal{
+    width: 400px;
+    background-color: white;
+    min-height: 350px;
+    margin: auto;
+    margin-top: 50px; 
+    position: relative;   
+}
+#userModal>form{
+    width: 90%; 
+    margin: auto;  
+}
+#userModal>h3{
+    padding-top: 20px;
+    text-align: center;
+    font-family: 'Cipitilloimport';
+    letter-spacing: 2px;
+    color: black; 
+    margin-bottom: 40px; 
+}
+#userModal>p{
+    position: absolute;
+    color: red;
+    transform: rotate(45deg);
+    top: -10px;
+    right: 5px;
+    font-weight: bolder;
+    font-size: 22px;
+    cursor: pointer;
+}
+#userModal>form>select{
+    width:100%       
+}
+#userModal>form>input{
+   width: 99%;       
+}
+#userModal>form>input+label, #userModal>form>select+label{
+    position: relative;
+    top: -50px;
+    color: grey;
+    transition: 0.800s ease;
+
+ }
+ #userModal>form>input, #userModal>form>select{
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid grey;
+    margin-bottom: 30px;
+ }
+ #userModal>form>div{
+   width: 150px;
+   margin: auto;
+   
+ }
+ #userModal>form>div>input{
+    width: 100%;
+    outline: 0;
+    padding: 5px;
+    border: 2px solid indigo;
+    border-radius: 7px;
+    background-color: white;
+    margin-bottom: 20px;
+    cursor: pointer;
+ }
+ #userModal>form>select+label{
+    font-size: 16px;
+    
+ }
+ #userModal>form>input:focus{
+    border-bottom-color: indigo; 
+ }
+ #userModal>form>input:valid{
+    border-bottom-color: indigo; 
+ }
+ #userModal>form>input:focus+label{
+    font-size: 12px;
+    color: indigo; 
+    top: -90px; 
+ }
+ #userModal>form>input:valid+label{ 
+    top: -70px; 
+    font-size: 12px;
+    color: indigo; 
+ }
+
+.orderss{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    background-color: red;
+    
+}
+#OrdersHead{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    font-weight: bolder;
+    color:  green;   
+}
+#UserordersNocontent{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    color: grey;    
+}
+@media(max-width:932px){
+    
+    #Toggle{
+         margin-right: 80px;
+         border-right: 0;
+         margin-left: -200px;
+         transition: 0.800s ease;
+    }
+    #UserMain>aside{
+      position: fixed;
+      top: 50px;
+       z-index: 999;
+      width: 200px;
+      margin-left: -200px;
+      transition: 0.800s ease;
+      }
+      #UserMain>aside>ol>li{
+      top: 0;  
+      transition: 0.800s ease;
+    }
+      #sec>div{
+        width: 100%;
+        
+    }
+    #OrdersPanel{
+    
+        justify-content: space-around;
+        width: 100%;
+        min-height: 90px;
+       
+        margin-top: 40px;
+        
+        font-family: 'Cipitilloimport';
+    }
+    #UserHead{
+        display: flex;
+        padding: 0;
+        margin: 0;
+    }
+    #createOrder{
+        color: green;
+        font-weight: bold;
+        padding: 10px;
+        border: solid 2px green;
+        border-radius: 7px;
+        width: 120px;
+        margin: auto;
+        cursor: pointer;
+    }
+    
+}
+@media(max-width:596px){
+    #navBarU{
+        margin-right: 80%;
+       
+    }
+    #userModal{
+        width: 300px;
+          
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+#signUpBox{
+    width: 50%;
+    min-height: 550px;
+    box-shadow: -2px -6px 10px 6px rgb(230, 222, 222);
+    border-radius: 7px;
+    padding: 10px;
+    
+    margin: auto;
+    margin-top: 40px;
+}
+
+#signUpBox>form{
+    padding-top: 20px;
+    width: 80%;
+    position: relative;
+    margin: auto;
+    margin-top: 40px;
+
+    overflow: hidden;
+}
+#signUpBox>span{
+    margin-right: 10%;
+    font-family: 'Cipitilloimport';
+    font-size: 30px;
+    cursor: pointer;
+    
+ }
+ #signUpBox>span>a{
+   text-decoration: none;
+   color: black;
+   
+ }
+ #signUpBox>span>a>span{
+     color: rgb(231, 71, 71);
+      
+  }
+ 
+  #signUpBox>form>input{
+      width: 100%;
+      height: 40px;
+      font-size: 17px;
+      border: 0;
+      outline: 0;
+      border-bottom: 2px solid grey;
+      
+      transition: 0.800s ease;
+  }
+  #signUpBox>form>div{
+    width: 100px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+   
+}
+#signUpBox>form>div>input{
+     border-radius: 7px;
+     width: 100%;
+     border: 2px solid indigo;
+     background-color: white;
+     padding: 5px;
+     color: rgb(231, 71, 71);
+     font-weight: bold;
+     cursor: pointer;
+   
+}
+#signUpBox>form>input+label{
+    
+    font-size: 17px;
+    position: relative;
+    top: -20px;
+    
+}
+#signUpBox>form>input:focus+label{
+    
+    font-size: 14px;
+    top: -60px;
+    color: indigo;
+    transition: 0.800s ease;
+}
+#signUpBox>form>input:valid{
+    
+    
+    transition: 0.800s ease;
+    border-bottom: 2px solid indigo;
+}
+#signUpBox>form>input:valid+label{
+    
+    font-size: 14px;
+    top: -60px;
+    color: indigo;
+    transition: 0.800s ease;
+}
+
+@media(max-width:760px){
+    #signUpBox{
+        width: 80%;
+       
+           
+            min-height: 550px;
+            box-shadow:none;
+            border-radius: 7px;
+            padding: 10px;
+            border: 0;
+            
+            margin: auto;
+            margin-top: 40px;
+      
+        
+    }
+}
